@@ -5,6 +5,7 @@
   background-color: #121212; /* Dark fallback */
   color: #fff;
   font-family: 'Roboto', sans-serif;
+  overflow-x: hidden;
 }
 
 .video-background {

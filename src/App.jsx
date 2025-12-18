@@ -25,7 +25,7 @@ function App() {
       </div>
 
       <Navbar bg="dark" variant="dark" expand="lg" sticky="top">
-        <Container>
+        <Container fluid>
           <Navbar.Brand href="#home">
             <Logo />
             SDASYSTEM
@@ -43,7 +43,7 @@ function App() {
       </Navbar>
 
       <header className="hero-section text-center text-white"> 
-        <Container>
+        <Container fluid>
           <h1 className="display-3">Leading the Future of Cybersecurity</h1>
           <p className="lead">
             Providing cutting-edge security solutions, VPNs, and firewall
@@ -55,7 +55,7 @@ function App() {
 
       <main>
         <section id="services" className="py-5"> 
-          <Container>
+          <Container fluid>
             <h2 className="text-center mb-4">Our Services</h2>
             <Row>
               <Col md={4} className="mb-4">
@@ -100,7 +100,7 @@ function App() {
       </main>
 
       <footer className="bg-dark text-white text-center py-3"> 
-        <Container>
+        <Container fluid>
           <p>&copy; {new Date().getFullYear()} SDASYSTEM. All Rights Reserved.</p>
         </Container>
       </footer>
