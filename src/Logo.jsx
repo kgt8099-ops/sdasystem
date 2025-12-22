@@ -1,37 +1,17 @@
 import React from 'react';
-import './Logo.css'; // We will create this file for the animation
+import './Logo.css'; // Import the CSS for styling
 
 const Logo = () => {
   return (
-    <svg
-      className="logo-svg"
-      width="40"
-      height="40"
-      viewBox="0 0 100 100"
-      xmlns="http://www.w3.org/2000/svg"
-    >
+    <svg className="logo-svg" viewBox="0 0 200 30" width="160" height="24">
       <defs>
-        <linearGradient id="logo-gradient" x1="0%" y1="0%" x2="100%" y2="100%">
-          <stop offset="0%" style={{ stopColor: '#00c6ff' }} />
-          <stop offset="100%" style={{ stopColor: '#0072ff' }} />
+        <linearGradient id="grad1" x1="0%" y1="0%" x2="100%" y2="0%">
+          <stop offset="0%" style={{ stopColor: '#00bfff', stopOpacity: 1 }} />
+          <stop offset="100%" style={{ stopColor: '#00ffc3', stopOpacity: 1 }} />
         </linearGradient>
       </defs>
-      <path
-        className="logo-shield"
-        fill="url(#logo-gradient)"
-        d="M50 5 L95 25 L95 75 L50 95 L5 75 L5 25 Z"
-      />
-      <text
-        x="50%"
-        y="55%"
-        textAnchor="middle"
-        fill="white"
-        fontSize="30"
-        fontWeight="bold"
-        className="logo-text"
-      >
-        SDA
-      </text>
+      <text className="logo-text-sda" x="0" y="22" fill="url(#grad1)">SDA</text>
+      <text className="logo-text-system" x="55" y="22" fill="#ffffff">SYSTEM</text>
     </svg>
   );
 };

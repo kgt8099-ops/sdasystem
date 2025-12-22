@@ -1,30 +1,38 @@
+@keyframes type-sda {
+  from {
+    width: 0;
+  }
+  to {
+    width: 100%;
+  }
+}
+
+@keyframes fade-in-system {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
 .logo-svg {
-  transition: transform 0.3s ease-in-out;
+  font-family: 'Orbitron', sans-serif; /* A futuristic, tech-style font */
+  font-weight: 700;
+  font-size: 24px;
+  letter-spacing: 2px;
 }
 
-.logo-svg:hover {
-  transform: scale(1.1) rotate(5deg);
+.logo-text-sda {
+  stroke: #00bfff;
+  stroke-width: 0.5px;
+  animation: type-sda 1s steps(3, end) forwards;
+  overflow: hidden;
+  white-space: nowrap;
 }
 
-.logo-shield {
-  animation: pulse 2s infinite;
+.logo-text-system {
+  opacity: 0; /* Start as invisible */
+  animation: fade-in-system 1s ease-in 1s forwards; /* Fade in after the first animation */
 }
 
-.logo-text {
-  font-family: 'Orbitron', sans-serif; /* A futuristic font */
-}
-
-@keyframes pulse {
-  0% {
-    transform: scale(1);
-    opacity: 1;
-  }
-  50% {
-    transform: scale(1.05);
-    opacity: 0.9;
-  }
-  100% {
-    transform: scale(1);
-    opacity: 1;
-  }
-}
