@@ -77,6 +77,12 @@
   box-shadow: 0 10px 20px rgba(0, 198, 255, 0.2);
 }
 
+#services .card .card-img-top {
+  height: 200px;
+  object-fit: cover;
+}
+
+
 /* Footer styling */
 footer#contact {
   position: relative;

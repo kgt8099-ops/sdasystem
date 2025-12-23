@@ -34,12 +34,16 @@ function App() {
           <Navbar.Collapse id="basic-navbar-nav">
             <Nav className="ms-auto">
               <Nav.Link href="#home">홈</Nav.Link>
-              <Nav.Link href="#services">고급 보안 솔루션</Nav.Link>
-              <Nav.Link href="#services">고속 VPN</Nav.Link>
-              <Nav.Link href="#services">차세대 Firewall</Nav.Link>
+              <NavDropdown title="서비스" id="basic-nav-dropdown">
+                <NavDropdown.Item href="#services">고급 보안 솔루션</NavDropdown.Item>
+                <NavDropdown.Item href="#services">고속 VPN</NavDropdown.Item>
+                <NavDropdown.Item href="#services">차세대 Firewall</NavDropdown.Item>
+              </NavDropdown>
               <Nav.Link href="#about">회사 소개</Nav.Link>
-              <Nav.Link href="#contact">문의하기</Nav.Link>
-              <Nav.Link href="#contact">무료 상담 받기</Nav.Link>
+              <NavDropdown title="고객 지원" id="customer-support-dropdown">
+                <NavDropdown.Item href="#contact">문의하기</NavDropdown.Item>
+                <NavDropdown.Item href="#contact">무료 상담 받기</NavDropdown.Item>
+              </NavDropdown>
               <Nav.Link href="#downloads">자료실</Nav.Link>
             </Nav>
           </Navbar.Collapse>
@@ -85,7 +89,7 @@ function App() {
               </Col>
               <Col md={4} className="mb-4">
                 <Card className="h-100 shadow-sm d-flex flex-column">
-                  <Card.Img variant="top" src="https://images.pexels.com/photos/207580/pexels-photo-207580.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" />
+                  <Card.Img variant="top" src="https://images.pexels.com/photos/5380642/pexels-photo-5380642.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" />
                   <Card.Body className="flex-grow-1">
                     <Card.Title>차세대 Firewall</Card.Title>
                     <Card.Text>
@@ -195,7 +199,7 @@ function App() {
                 </Col>
             </Row>
             <hr className="my-4" />
-            <p>&copy; {new Date().getFullYear()} SDASYSTEM. 모든 권리 보유.</p>
+            <p>&copy; 2025 SDASYSTEM. All rights reserved.</p>
         </Container>
       </footer>
     </div>
