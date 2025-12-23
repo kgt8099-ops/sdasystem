@@ -15,16 +15,6 @@ import Logo from './Logo'; // 로고 컴포넌트 가져오기
 function App() {
   return (
     <div className="App"> 
-      <div className="video-background">
-        <video autoPlay muted loop id="myVideo">
-          <source
-            src="https://assets.mixkit.co/videos/preview/mixkit-digital-animation-of-a-brain-with-a-hacker-in-the-center-29471-large.mp4"
-            type="video/mp4"
-          />
-          브라우저가 HTML5 비디오를 지원하지 않습니다.
-        </video>
-      </div>
-      
       <Navbar bg="dark" variant="dark" expand="lg" sticky="top">
         <Container fluid>
           <Navbar.Brand href="#home">

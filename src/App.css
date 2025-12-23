@@ -6,30 +6,32 @@ html {
 /* Import Google Fonts */
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
 
-.App {
-  position: relative;
-  background-color: #121212; /* Dark fallback for when video fails */
-  color: #fff;
-  font-family: 'Roboto', sans-serif;
+body {
+  background-color: #121212;
 }
 
-/* Video Background Styling */
-.video-background {
-  position: fixed; /* Fix the background, so it doesn't scroll with content */
+.App {
+  position: relative;
+  color: #fff;
+  font-family: 'Roboto', sans-serif;
+  background-image: url('https://images.pexels.com/photos/8386440/pexels-photo-8386440.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2');
+  background-size: cover;
+  background-position: center center;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+}
+
+.App::before {
+  content: '';
+  position: fixed;
   top: 0;
   left: 0;
   width: 100%;
   height: 100%;
-  z-index: -1; /* Place the video behind all other content */
-  overflow: hidden;
+  background-color: rgba(0, 0, 0, 0.6);
+  z-index: -1;
 }
 
-#myVideo {
-  width: 100%;
-  height: 100%;
-  object-fit: cover; /* Ensure the video covers the entire area */
-  filter: brightness(0.3) blur(2px); /* Darken and blur the video for text readability */
-}
 
 /* Navbar brand alignment with Logo */
 .navbar-brand {
@@ -47,6 +49,7 @@ html {
   padding: 2rem;
   position: relative; /* Needed for z-index to work correctly */
   z-index: 1;
+  background: transparent; /* Ensure hero section is transparent */
 }
 
 .hero-section h1 {
@@ -57,7 +60,8 @@ html {
 
 /* Section Styling */
 #services,
-#about {
+#about,
+#downloads {
   position: relative; /* Ensure sections stay above the video background */
   z-index: 1;
   background: rgba(18, 18, 18, 0.8); /* Semi-transparent background */
@@ -69,6 +73,16 @@ html {
   padding-bottom: 4rem;
 }
 
+#downloads {
+    background: rgba(248, 249, 250, 0.85); /* Lighter background for this section */
+    color: #333;
+}
+
+#downloads h2 {
+    color: #000;
+}
+
+
 .card {
   background: rgba(30, 30, 30, 0.6);
   border: 1px solid rgba(0, 198, 255, 0.2);
@@ -76,10 +90,22 @@ html {
   transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
+#downloads .card {
+    background: rgba(255, 255, 255, 0.7);
+    color: #333;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+
 .card:hover {
   transform: translateY(-10px);
   box-shadow: 0 10px 20px rgba(0, 198, 255, 0.2);
 }
+
+#downloads .card:hover {
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15);
+}
+
 
 #services .card .card-img-top {
   height: 200px;
@@ -91,4 +117,5 @@ html {
 footer#contact {
   position: relative;
   z-index: 1;
+  background: #212529; /* Solid dark background for footer */
 }
