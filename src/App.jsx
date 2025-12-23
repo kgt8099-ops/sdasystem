@@ -11,10 +11,12 @@ import {
 } from 'react-bootstrap';
 import './App.css';
 import Logo from './Logo'; // 로고 컴포넌트 가져오기
+import ParticlesBackground from './components/ParticlesBackground'; // 파티클 배경 컴포넌트 가져오기
 
 function App() {
   return (
-    <div className="App"> 
+    <div> 
+      <ParticlesBackground />
       <Navbar bg="dark" variant="dark" expand="lg" sticky="top">
         <Container fluid>
           <Navbar.Brand href="#home">
@@ -53,7 +55,7 @@ function App() {
       <main>
         <section id="services" className="py-5"> 
           <Container fluid>
-            <h2 className="text-center mb-4">우리의 서비스</h2>
+            <h2 className="text-center mb-4 text-white-bright">우리의 서비스</h2>
             <Row>
               <Col md={4} className="mb-4">
                 <Card className="h-100 shadow-sm d-flex flex-column">
@@ -94,15 +96,15 @@ function App() {
 
         <section id="about" className="py-5"> 
           <Container fluid>
-            <h2 className="text-center mb-4">회사 소개</h2>
+            <h2 className="text-center mb-4 text-white-bright">회사 소개</h2>
             <Row className="align-items-center">
               <Col md={6}>
-                <h3>우리의 미션</h3>
-                <p>
+                <h3 className="text-white-bright">우리의 미션</h3>
+                <p className="text-white-bright">
                   SDASYSTEM의 미션은 급변하는 디지털 세상에서 고객이 자신감을 가지고 비즈니스를 운영할 수 있도록 철통같은 보안 솔루션을 제공하는 것입니다. 우리는 모든 일에 있어 혁신, 탁월함, 정직함을 약속합니다.
                 </p>
-                <h3>우리의 비전</h3>
-                <p>
+                <h3 className="text-white-bright">우리의 비전</h3>
+                <p className="text-white-bright">
                   우리는 모든 디지털 자산이 기본적으로 안전하고, 모든 규모의 기업이 사이버 위협에 대한 두려움 없이 성장할 수 있는 미래를 그립니다. 우리의 목표는 전 세계 고객들에게 가장 신뢰받는 사이버 보안 파트너가 되는 것입니다.
                 </p>
               </Col>
@@ -113,7 +115,7 @@ function App() {
           </Container>
         </section>
 
-        <section id="downloads" className="py-5 bg-light"> 
+        <section id="downloads" className="py-5"> 
           <Container fluid>
             <h2 className="text-center mb-4">자료실</h2>
             <Row>
