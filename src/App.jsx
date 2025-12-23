@@ -117,19 +117,19 @@ function App() {
 
         <section id="downloads" className="py-5"> 
           <Container fluid>
-            <h2 className="text-center mb-4">자료실</h2>
+            <h2 className="text-center mb-4 text-white-bright">자료실</h2>
             <Row>
               <Col md={4} className="mb-4">
                 <Card className="h-100 shadow-sm text-center">
                   <Card.Body className="d-flex flex-column justify-content-between">
                     <div className="mb-4">
-                      <i className="fas fa-file-pdf fa-3x text-primary"></i>
+                      <i className="fas fa-file-pdf fa-3x text-danger"></i>
                     </div>
                     <Card.Title>제품 소개서</Card.Title>
                     <Card.Text>
                       SDASYSTEM의 모든 제품과 서비스에 대한 상세 정보를 확인하세요.
                     </Card.Text>
-                    <Button variant="primary" href="#" download>
+                    <Button variant="outline-danger" href="#" download>
                       다운로드 <i className="fas fa-download ms-2"></i>
                     </Button>
                   </Card.Body>
@@ -139,13 +139,13 @@ function App() {
                 <Card className="h-100 shadow-sm text-center">
                   <Card.Body className="d-flex flex-column justify-content-between">
                     <div className="mb-4">
-                      <i className="fas fa-file-alt fa-3x text-success"></i>
+                      <i className="fas fa-file-alt fa-3x text-primary"></i>
                     </div>
                     <Card.Title>보안 백서</Card.Title>
                     <Card.Text>
                       최신 사이버 보안 위협과 방어 전략에 대한 심층 분석 자료입니다.
                     </Card.Text>
-                    <Button variant="success" href="#" download>
+                    <Button variant="outline-primary" href="#" download>
                       다운로드 <i className="fas fa-download ms-2"></i>
                     </Button>
                   </Card.Body>
@@ -155,13 +155,13 @@ function App() {
                 <Card className="h-100 shadow-sm text-center">
                   <Card.Body className="d-flex flex-column justify-content-between">
                     <div className="mb-4">
-                      <i className="fas fa-file-word fa-3x text-info"></i>
+                      <i className="fas fa-file-word fa-3x text-success"></i>
                     </div>
                     <Card.Title>서비스 약관</Card.Title>
                     <Card.Text>
                       저희 서비스 이용과 관련된 법적 고지 및 약관을 확인하세요.
                     </Card.Text>
-                    <Button variant="info" href="#" download>
+                    <Button variant="outline-success" href="#" download>
                       다운로드 <i className="fas fa-download ms-2"></i>
                     </Button>
                   </Card.Body>

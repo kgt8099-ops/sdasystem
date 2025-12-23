@@ -49,29 +49,18 @@ body {
   padding-top: 4rem;
   padding-bottom: 4rem;
   border: 1px solid rgba(255, 255, 255, 0.1);
-}
-
-#about, #services {
   background: rgba(10, 15, 20, 0.85); /* Darker, more opaque background */
   color: rgba(255, 255, 255, 0.95); /* Brighter default text color */
 }
 
-#about p, #services p {
+
+#about p, #services p, #downloads p {
   text-shadow: 0 0 6px rgba(0, 0, 0, 0.9);
 }
 
 .text-white-bright {
   color: #FFFFFF !important; /* Force pure white color */
   text-shadow: 0 0 12px rgba(0, 0, 0, 1); /* Stronger shadow for max contrast */
-}
-
-#downloads {
-    background: rgba(248, 249, 250, 0.2); /* Lighter background for this section */
-    color: #fff;
-}
-
-#downloads h2 {
-    color: #fff;
 }
 
 .card {
@@ -81,17 +70,17 @@ body {
 }
 
 /* Service Card Specifics */
-#services .card {
+#services .card, #downloads .card {
   background: rgba(15, 20, 25, 0.9) !important; /* Even darker and more opaque */
   border: 1px solid rgba(0, 198, 255, 0.3);
 }
 
-#services .card-title {
+#services .card-title, #downloads .card-title {
   color: #00e5ff; /* Brighter cyan for service titles */
   text-shadow: 0 0 5px rgba(0, 229, 255, 0.5); /* Add a glow */
 }
 
-#services .card-text {
+#services .card-text, #downloads .card-text {
   color: #FFFFFF; /* Pure white for max contrast */
   text-shadow: 0 0 5px rgba(0, 0, 0, 0.8); /* Stronger shadow */
 }
@@ -101,19 +90,9 @@ body {
   object-fit: cover;
 }
 
-/* Downloads Card Specifics */
-#downloads .card {
-    background: rgba(255, 255, 255, 0.3);
-    border: 1px solid rgba(255, 255, 255, 0.2);
-}
-
 .card:hover {
   transform: translateY(-10px);
   box-shadow: 0 10px 20px rgba(0, 198, 255, 0.2);
-}
-
-#downloads .card:hover {
-    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15);
 }
 
 /* Footer styling */
