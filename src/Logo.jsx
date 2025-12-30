@@ -11,7 +11,7 @@ const Logo = () => {
         </linearGradient>
       </defs>
       <text className="logo-text-sda" x="0" y="22" fill="url(#grad1)">SDA</text>
-      <text className="logo-text-system" x="55" y="22" fill="#ffffff">SYSTEM</text>
+      <text className="logo-text-system" x="65" y="22" fill="#ffffff">SYSTEM</text>
     </svg>
   );
 };
