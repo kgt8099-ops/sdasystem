@@ -14,6 +14,12 @@ import Logo from './Logo'; // 로고 컴포넌트 가져오기
 import ParticlesBackground from './components/ParticlesBackground'; // 파티클 배경 컴포넌트 가져오기
 
 function App() {
+
+  const handleComingSoon = (e) => {
+    e.preventDefault();
+    alert('준비중입니다.');
+  };
+
   return (
     <div> 
       <ParticlesBackground />
@@ -36,7 +42,7 @@ function App() {
                 <NavDropdown.Item href="#contact">문의하기</NavDropdown.Item>
                 <NavDropdown.Item href="#contact">무료 상담 받기</NavDropdown.Item>
               </NavDropdown>
-              <Nav.Link href="#downloads">자료실</Nav.Link>
+              <Nav.Link href="#downloads">제품소개서</Nav.Link>
             </Nav>
           </Navbar.Collapse>
         </Container>
@@ -117,7 +123,7 @@ function App() {
 
         <section id="downloads" className="py-5"> 
           <Container fluid>
-            <h2 className="text-center mb-4 text-white-bright">자료실</h2>
+            <h2 className="text-center mb-4 text-white-bright">제품소개서</h2>
             <Row>
               <Col md={3} sm={6} className="mb-4">
                 <Card className="h-100 shadow-sm text-center">
@@ -129,7 +135,7 @@ function App() {
                     <Card.Text>
                       네트워크를 보호하는 차세대 방화벽 솔루션 상세 자료입니다.
                     </Card.Text>
-                    <Button variant="outline-danger" href="#" download>
+                    <Button variant="outline-danger" onClick={handleComingSoon}>
                       다운로드 <i className="fas fa-download ms-2"></i>
                     </Button>
                   </Card.Body>
@@ -145,7 +151,7 @@ function App() {
                     <Card.Text>
                       안전한 원격 접속을 위한 가상 사설망(VPN) 기술 자료입니다.
                     </Card.Text>
-                    <Button variant="outline-primary" href="#" download>
+                    <Button variant="outline-primary" onClick={handleComingSoon}>
                       다운로드 <i className="fas fa-download ms-2"></i>
                     </Button>
                   </Card.Body>
