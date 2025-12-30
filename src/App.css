@@ -73,6 +73,16 @@ body {
 #services .card, #downloads .card {
   background: rgba(15, 20, 25, 0.9) !important; /* Even darker and more opaque */
   border: 1px solid rgba(0, 198, 255, 0.3);
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+
+#services .card-body, #downloads .card-body {
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
 
 #services .card-title, #downloads .card-title {
@@ -83,6 +93,7 @@ body {
 #services .card-text, #downloads .card-text {
   color: #FFFFFF; /* Pure white for max contrast */
   text-shadow: 0 0 5px rgba(0, 0, 0, 0.8); /* Stronger shadow */
+  flex-grow: 1;
 }
 
 #services .card .card-img-top {
