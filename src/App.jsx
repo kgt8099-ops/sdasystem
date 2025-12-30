@@ -44,9 +44,9 @@ function App() {
 
       <header id="home" className="hero-section text-center text-white"> 
         <Container fluid>
-          <h1 className="display-3">우리는 당신의 자산과 보안을 책임지는<br />보안의 컨설팅 회사입니다.</h1>
+          <h1 className="display-3">우리는 기업의 자산과 보안을 책임지는<br />보안 컨설팅 회사입니다.</h1>
           <p className="lead">
-            최적의보안 솔루션 UTM,VPN,Firewall 판매/임대 서비스를 통해 고객의 디지털 자산을 안전하게 보호합니다
+            최적의 보안 솔루션 UTM,VPN,Firewall 판매/임대 서비스를 통해 고객의 디지털 자산을 안전하게 보호 합니다.
           </p>
           <Button variant="primary" size="lg" href="#contact">무료 상담 받기</Button>
         </Container>
@@ -55,7 +55,7 @@ function App() {
       <main>
         <section id="services" className="py-5"> 
           <Container fluid>
-            <h2 className="text-center mb-4 text-white-bright">우리의 구매/임대 서비스</h2>
+            <h2 className="text-center mb-4 text-white-bright">보안 솔루션 구매/임대 서비스</h2>
             <Row>
               <Col md={4} className="mb-4">
                 <Card className="h-100 shadow-sm d-flex flex-column">
