@@ -167,7 +167,7 @@ function App() {
                     <Card.Text>
                       통합 위협 관리(UTM) 시스템에 대한 포괄적인 안내서입니다.
                     </Card.Text>
-                    <Button variant="outline-success" href="Down/2025_브로슈어_AXGATE UTM_제품사양.pdf" download>
+                    <Button variant="outline-success" href="/Down/2025_브로슈어_AXGATE UTM_제품사양.pdf" download>
                       다운로드 <i className="fas fa-download ms-2"></i>
                     </Button>
                   </Card.Body>
@@ -183,7 +183,7 @@ function App() {
                     <Card.Text>
                       보안 소켓 계층(SSL) VPN의 원리와 구현 방법을 다룹니다.
                     </Card.Text>
-                    <Button variant="outline-info" href="Down/제품소개서_AXGATE SSL VPN.pdf" download>
+                    <Button variant="outline-info" href="/Down/제품소개서_AXGATE SSL VPN.pdf" download>
                       다운로드 <i className="fas fa-download ms-2"></i>
                     </Button>
                   </Card.Body>
