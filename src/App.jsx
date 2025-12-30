@@ -119,15 +119,15 @@ function App() {
           <Container fluid>
             <h2 className="text-center mb-4 text-white-bright">자료실</h2>
             <Row>
-              <Col md={4} className="mb-4">
+              <Col md={3} sm={6} className="mb-4">
                 <Card className="h-100 shadow-sm text-center">
                   <Card.Body className="d-flex flex-column justify-content-between">
                     <div className="mb-4">
-                      <i className="fas fa-file-pdf fa-3x text-danger"></i>
+                      <i className="fas fa-shield-alt fa-3x text-danger"></i>
                     </div>
-                    <Card.Title>제품 소개서</Card.Title>
+                    <Card.Title>FIREWALL</Card.Title>
                     <Card.Text>
-                      SDASYSTEM의 모든 제품과 서비스에 대한 상세 정보를 확인하세요.
+                      네트워크를 보호하는 차세대 방화벽 솔루션 상세 자료입니다.
                     </Card.Text>
                     <Button variant="outline-danger" href="#" download>
                       다운로드 <i className="fas fa-download ms-2"></i>
@@ -135,15 +135,15 @@ function App() {
                   </Card.Body>
                 </Card>
               </Col>
-              <Col md={4} className="mb-4">
+              <Col md={3} sm={6} className="mb-4">
                 <Card className="h-100 shadow-sm text-center">
                   <Card.Body className="d-flex flex-column justify-content-between">
                     <div className="mb-4">
-                      <i className="fas fa-file-alt fa-3x text-primary"></i>
+                      <i className="fas fa-key fa-3x text-primary"></i>
                     </div>
-                    <Card.Title>보안 백서</Card.Title>
+                    <Card.Title>VPN</Card.Title>
                     <Card.Text>
-                      최신 사이버 보안 위협과 방어 전략에 대한 심층 분석 자료입니다.
+                      안전한 원격 접속을 위한 가상 사설망(VPN) 기술 자료입니다.
                     </Card.Text>
                     <Button variant="outline-primary" href="#" download>
                       다운로드 <i className="fas fa-download ms-2"></i>
@@ -151,17 +151,33 @@ function App() {
                   </Card.Body>
                 </Card>
               </Col>
-              <Col md={4} className="mb-4">
+              <Col md={3} sm={6} className="mb-4">
                 <Card className="h-100 shadow-sm text-center">
                   <Card.Body className="d-flex flex-column justify-content-between">
                     <div className="mb-4">
-                      <i className="fas fa-file-word fa-3x text-success"></i>
+                      <i className="fas fa-project-diagram fa-3x text-success"></i>
                     </div>
-                    <Card.Title>서비스 약관</Card.Title>
+                    <Card.Title>UTM</Card.Title>
                     <Card.Text>
-                      저희 서비스 이용과 관련된 법적 고지 및 약관을 확인하세요.
+                      통합 위협 관리(UTM) 시스템에 대한 포괄적인 안내서입니다.
                     </Card.Text>
-                    <Button variant="outline-success" href="#" download>
+                    <Button variant="outline-success" href="Down/2025_브로슈어_AXGATE UTM_제품사양.pdf" download>
+                      다운로드 <i className="fas fa-download ms-2"></i>
+                    </Button>
+                  </Card.Body>
+                </Card>
+              </Col>
+              <Col md={3} sm={6} className="mb-4">
+                <Card className="h-100 shadow-sm text-center">
+                  <Card.Body className="d-flex flex-column justify-content-between">
+                    <div className="mb-4">
+                      <i className="fas fa-lock fa-3x text-info"></i>
+                    </div>
+                    <Card.Title>SSL VPN</Card.Title>
+                    <Card.Text>
+                      보안 소켓 계층(SSL) VPN의 원리와 구현 방법을 다룹니다.
+                    </Card.Text>
+                    <Button variant="outline-info" href="Down/제품소개서_AXGATE SSL VPN.pdf" download>
                       다운로드 <i className="fas fa-download ms-2"></i>
                     </Button>
                   </Card.Body>
