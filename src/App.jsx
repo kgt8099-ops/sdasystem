@@ -27,8 +27,8 @@ function App() {
             <Nav className="ms-auto">
               <Nav.Link href="#home">홈</Nav.Link>
               <NavDropdown title="서비스" id="basic-nav-dropdown">
-                <NavDropdown.Item href="#services">고급 보안 솔루션</NavDropdown.Item>
-                <NavDropdown.Item href="#services">고속 VPN</NavDropdown.Item>
+                <NavDropdown.Item href="#services">최신 보안 솔루션</NavDropdown.Item>
+                <NavDropdown.Item href="#services">안전하고 빠른 VPN</NavDropdown.Item>
                 <NavDropdown.Item href="#services">차세대 Firewall</NavDropdown.Item>
               </NavDropdown>
               <Nav.Link href="#about">회사 소개</Nav.Link>
@@ -44,9 +44,9 @@ function App() {
 
       <header id="home" className="hero-section text-center text-white"> 
         <Container fluid>
-          <h1 className="display-3">사이버 보안의 미래를 선도합니다</h1>
+          <h1 className="display-3">우리는 당신의 자산과 보안을 책임지는<br />보안의 컨설팅 회사입니다.</h1>
           <p className="lead">
-            최첨단 보안 솔루션, VPN, Firewall 서비스를 통해 고객의 디지털 자산을 안전하게 보호합니다.
+            최적의보안 솔루션 UTM,VPN,Firewall 판매/임대 서비스를 통해 고객의 디지털 자산을 안전하게 보호합니다
           </p>
           <Button variant="primary" size="lg" href="#contact">무료 상담 받기</Button>
         </Container>
@@ -55,13 +55,13 @@ function App() {
       <main>
         <section id="services" className="py-5"> 
           <Container fluid>
-            <h2 className="text-center mb-4 text-white-bright">우리의 서비스</h2>
+            <h2 className="text-center mb-4 text-white-bright">우리의 구매/임대 서비스</h2>
             <Row>
               <Col md={4} className="mb-4">
                 <Card className="h-100 shadow-sm d-flex flex-column">
                   <Card.Img variant="top" src="https://images.pexels.com/photos/3861969/pexels-photo-3861969.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" />
                   <Card.Body className="flex-grow-1">
-                    <Card.Title>고급 보안 솔루션</Card.Title>
+                    <Card.Title>최신 보안 솔루션</Card.Title>
                     <Card.Text>
                       우리의 강력한 보안 솔루션은 위협을 사전에 탐지하고 무력화하여 24시간 내내 고객의 비즈니스를 안전하게 보호하도록 설계되었습니다.
                     </Card.Text>
@@ -72,9 +72,9 @@ function App() {
                 <Card className="h-100 shadow-sm d-flex flex-column">
                   <Card.Img variant="top" src="https://images.pexels.com/photos/5380664/pexels-photo-5380664.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" />
                   <Card.Body className="flex-grow-1">
-                    <Card.Title>고속 VPN</Card.Title>
+                    <Card.Title>안전하고 빠른 VPN</Card.Title>
                     <Card.Text>
-                      고속 암호화 VPN 서비스로 온라인 활동을 보호하고 데이터의 프라이버시와 익명성을 보장하세요.
+                      안전하고 빠른 암호화 VPN 서비스로 온라인 활동을 보호하고 데이터의 프라이버시와 익명성을 보장하세요.
                     </Card.Text>
                   </Card.Body>
                 </Card>
@@ -175,19 +175,20 @@ function App() {
       <footer id="contact" className="bg-dark text-white text-center py-5"> 
         <Container fluid>
             <h2 className="mb-4">문의하기</h2>
-            <p className="lead mb-4">언제나 도와드릴 준비가 되어 있습니다. 무료 상담이나 궁금한 점이 있으시면 언제든지 문의해 주세요.</p>
+            <p className="lead mb-4">우리는 언제나 도와드릴 준비가 되어 있습니다 무료 상담이나 구매/임대 문의에 궁금한 점이 있으시면 언제든지 문의 주세요.</p>
             <Row>
                 <Col md={4} className="mb-4">
                     <h4>주소</h4>
-                    <p>123 Security Lane, Tech City, 12345</p>
+                    <p>경기도 용인시 기흥구 강남서로 9, 7층 케이256호</p>
                 </Col>
                 <Col md={4} className="mb-4">
                     <h4>이메일</h4>
-                    <p>contact@sdasystem.com</p>
+                    <p>jsjbass@naver.com</p>
                 </Col>
                 <Col md={4} className="mb-4">
                     <h4>전화</h4>
-                    <p>+1 (234) 567-890</p>
+                    <p>사무실 : 070-8925-4668</p>
+                    <p>담당자 : 010-6811-9434</p>
                 </Col>
             </Row>
             <hr className="my-4" />
