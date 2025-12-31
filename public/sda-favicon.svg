@@ -1,0 +1,17 @@
+<svg width="100" height="100" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="shieldGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#8A2BE2;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#4B0082;stop-opacity:1" />
+    </linearGradient>
+    <filter id="glow" x="-50%" y="-50%" width="200%" height="200%">
+      <feGaussianBlur stdDeviation="3" result="coloredBlur"/>
+      <feMerge>
+        <feMergeNode in="coloredBlur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+  </defs>
+  <path d="M50 0 L95 20 V 60 C95 85 65 100 50 100 C35 100 5 85 5 60 V 20 Z" fill="url(#shieldGradient)" filter="url(#glow)"/>
+  <text x="50" y="62" font-family="'Arial Black', Gadget, sans-serif" font-size="40" fill="white" text-anchor="middle" style="text-shadow: 0 0 5px rgba(255,255,255,0.7);">SDA</text>
+</svg>

@@ -208,7 +208,7 @@ function App() {
                 </Col>
                 <Col md={4} className="mb-4">
                     <h4>이메일</h4>
-                    <p>jsjbass@naver.com</p>
+                    <p>bts@sdasystem.com</p>
                 </Col>
                 <Col md={4} className="mb-4">
                     <h4>전화</h4>
