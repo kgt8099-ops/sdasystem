@@ -170,6 +170,9 @@ function App() {
                     <Button variant="outline-success" href="/Down/2025_브로슈어_AXGATE UTM_제품사양.pdf" download>
                       브로슈어 <i className="fas fa-download ms-2"></i>
                     </Button>
+                    <Button variant="outline-success" href="/Down/제품소개서_AXGATE UTM 2025.pdf" download className="mt-2">
+                      제품소개서 <i className="fas fa-download ms-2"></i>
+                    </Button>
                   </Card.Body>
                 </Card>
               </Col>
