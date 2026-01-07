@@ -37,7 +37,10 @@ function App() {
                 <NavDropdown.Item href="#services">안전하고 빠른 VPN</NavDropdown.Item>
                 <NavDropdown.Item href="#services">차세대 Firewall</NavDropdown.Item>
               </NavDropdown>
-              <Nav.Link href="#about">회사 소개</Nav.Link>
+              <NavDropdown title="회사 소개" id="about-nav-dropdown">
+                <NavDropdown.Item href="#about">회사 소개</NavDropdown.Item>
+                <NavDropdown.Item href="#ceo-profile">대표 약력</NavDropdown.Item>
+              </NavDropdown>
               <NavDropdown title="고객 지원" id="customer-support-dropdown">
                 <NavDropdown.Item href="#contact">문의하기</NavDropdown.Item>
                 <NavDropdown.Item href="#contact">무료 상담 받기</NavDropdown.Item>
@@ -116,6 +119,32 @@ function App() {
               </Col>
               <Col md={6} className="text-center">
                 <img src="https://images.pexels.com/photos/3184418/pexels-photo-3184418.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" className="img-fluid rounded" alt="우리 팀" />
+              </Col>
+            </Row>
+          </Container>
+        </section>
+
+        <section id="ceo-profile" className="py-5 bg-light"> 
+          <Container fluid>
+            <h2 className="text-center mb-4">대표 약력</h2>
+            <Row className="align-items-center">
+              <Col md={4} className="text-center">
+                <img src="/ceo.jpg" className="img-fluid rounded-circle mb-3" alt="대표 사진" />
+                <h4>서정덕</h4>
+                <p className="text-muted">CEO</p>
+              </Col>
+              <Col md={8}>
+                <h3 className="mb-3">인사말</h3>
+                <p>
+                  SDASYSTEM을 찾아주신 모든 분들께 진심으로 감사드립니다. 저희는 고객의 가장 중요한 자산인 정보를 보호하기 위해 최선을 다하고 있으며, 빠르게 변화하는 사이버 위협 환경에 대응하기 위해 끊임없이 연구하고 발전하고 있습니다. 고객과의 신뢰를 최우선으로 생각하며, 최고의 보안 서비스를 제공할 것을 약속드립니다.
+                </p>
+                <h3 className="mt-4 mb-3">주요 약력</h3>
+                <ul>
+                  <li>(주)스가랴 정보보안 연구소 소장</li>
+                  <li>(주)한국콘텐츠 보안 유통 이사</li>
+                  <li>(주)에스지에스솔루션 정보보안 사업부 이사</li>
+                  <li>현대그룹 IT 계열사 현대BS&C 정보보안팀장</li>
+                </ul>
               </Col>
             </Row>
           </Container>
@@ -220,7 +249,7 @@ function App() {
                 </Col>
             </Row>
             <hr className="my-4" />
-            <p>&copy; 2025 SDASYSTEM. All rights reserved.</p>
+            <p>&copy; 2023 SDASYSTEM. All rights reserved.</p>
         </Container>
       </footer>
     </div>
