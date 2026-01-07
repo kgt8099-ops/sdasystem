@@ -39,7 +39,7 @@ function App() {
               </NavDropdown>
               <NavDropdown title="회사 소개" id="about-nav-dropdown">
                 <NavDropdown.Item href="#about">회사 소개</NavDropdown.Item>
-                <NavDropdown.Item href="#ceo-profile">대표 약력</NavDropdown.Item>
+                <NavDropdown.Item href="#ceo-profile">대표 인사말</NavDropdown.Item>
               </NavDropdown>
               <NavDropdown title="고객 지원" id="customer-support-dropdown">
                 <NavDropdown.Item href="#contact">문의하기</NavDropdown.Item>
@@ -124,27 +124,29 @@ function App() {
           </Container>
         </section>
 
-        <section id="ceo-profile" className="py-5 bg-light"> 
+        <section id="ceo-profile" className="py-5 bg-white text-dark"> 
           <Container fluid>
-            <h2 className="text-center mb-4">대표 약력</h2>
+            <h2 className="text-center mb-4">대표 인사말</h2>
             <Row className="align-items-center">
               <Col md={4} className="text-center">
                 <img src="/ceo.jpg" className="img-fluid rounded-circle mb-3" alt="대표 사진" />
-                <h4>서정덕</h4>
+                <h4>김건태</h4>
                 <p className="text-muted">CEO</p>
               </Col>
               <Col md={8}>
-                <h3 className="mb-3">인사말</h3>
                 <p>
-                  SDASYSTEM을 찾아주신 모든 분들께 진심으로 감사드립니다. 저희는 고객의 가장 중요한 자산인 정보를 보호하기 위해 최선을 다하고 있으며, 빠르게 변화하는 사이버 위협 환경에 대응하기 위해 끊임없이 연구하고 발전하고 있습니다. 고객과의 신뢰를 최우선으로 생각하며, 최고의 보안 서비스를 제공할 것을 약속드립니다.
+                  안녕하십니까, SDA SYSTEM 대표 김건태입니다.<br />
+                  20년 넘게 IT 분야에 몸담아오며, 저는 기술이 세상을 얼마나 빠르고 깊게 변화시키는지 직접 경험했습니다. 그리고 그 변화의 중심에서 ‘보안’과 ‘인공지능(AI)’의 융합이 미래의 핵심이 될 것이라 확신하게 되었습니다. 이러한 신념을 바탕으로, ‘Secure AI Innovation’이라는 철학 아래 SDA SYSTEM을 이끌고 있습니다.
                 </p>
-                <h3 className="mt-4 mb-3">주요 약력</h3>
-                <ul>
-                  <li>(주)스가랴 정보보안 연구소 소장</li>
-                  <li>(주)한국콘텐츠 보안 유통 이사</li>
-                  <li>(주)에스지에스솔루션 정보보안 사업부 이사</li>
-                  <li>현대그룹 IT 계열사 현대BS&C 정보보안팀장</li>
-                </ul>
+                <p>
+                  SK E&S의 도시가스 안전 시스템부터 하나금융투자의 보안포털, 씨티은행의 그룹웨어에 이르기까지, 다양한 대형 프로젝트를 성공적으로 이끌며 얻은 귀중한 경험은 AI 기반의 정보보안을 강화하고 고객의 소중한 데이터를 안전하게 보호하는 시스템을 구축하는 데 든든한 밑거름이 되었습니다.
+                </p>
+                <p>
+                  SDA SYSTEM은 단순히 위협을 막는 것을 넘어, 최신 AI 기술로 위협을 예측하고, 고객의 데이터를 더욱 안전하게 관리하며, 개인정보 유출을 원천적으로 방지하는 데 모든 역량을 집중하고 있습니다. 기술 혁신을 넘어, 윤리적이고 책임감 있는 AI 보안을 통해 고객과 사회로부터 신뢰를 얻는 것이 저의 가장 큰 목표입니다.
+                </p>
+                <p className="font-italic">
+                  "안전하고 신뢰받는 AI 시대를 열어가는 길, SDA SYSTEM이 앞장서겠습니다. 첨단 기술과 굳건한 보안으로 지속 가능한 디지털 혁신을 만들어가겠습니다."
+                </p>
               </Col>
             </Row>
           </Container>
