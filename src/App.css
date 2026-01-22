@@ -38,7 +38,8 @@ body {
 /* Section Styling */
 #services,
 #about,
-#downloads {
+#downloads,
+#ceo-profile {
   position: relative; /* Ensure sections stay above the background */
   z-index: 1;
   backdrop-filter: blur(10px); /* Frosted glass effect */
@@ -54,7 +55,7 @@ body {
 }
 
 
-#about p, #services p, #downloads p {
+#about p, #services p, #downloads p, #ceo-profile p {
   text-shadow: 0 0 6px rgba(0, 0, 0, 0.9);
 }
 
