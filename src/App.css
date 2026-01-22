@@ -59,6 +59,16 @@ body {
   text-shadow: 0 0 6px rgba(0, 0, 0, 0.9);
 }
 
+#ceo-profile img {
+    transform: rotate(2deg);
+    transition: transform 0.3s ease-in-out;
+}
+
+#ceo-profile img:hover {
+    transform: rotate(-2deg) scale(1.05);
+}
+
+
 .text-white-bright {
   color: #FFFFFF !important; /* Force pure white color */
   text-shadow: 0 0 12px rgba(0, 0, 0, 1); /* Stronger shadow for max contrast */
